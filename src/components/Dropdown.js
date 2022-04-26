@@ -18,13 +18,14 @@ const Dropdown = () => {
     setText(value);
   };
   const changeSelect = (e, id) => {
-    e.stopPropagation();
     setTitle(selectList[id - 1].title);
     setActive(false);
   };
   const selectBoxHandler = (e) => {
-    setActive(true);
+    e.stopPropagation();
+    setActive(!active);
   };
+
   const menuList = () => {
     return selectList
       .filter((value) => {
@@ -51,19 +52,19 @@ const Dropdown = () => {
       <div className="dropdown">
         <div className="select-box" onClick={selectBoxHandler}>
           {title}
-          <ul className={active ? "inner-select active" : "inner-select"}>
-            <li>
-              <input
-                type="text"
-                name="search"
-                id="search"
-                placeholder="search"
-                onChange={changeHandler}
-              />
-            </li>
-            {menuList()}
-          </ul>
         </div>
+        <ul className={active ? "inner-select active" : "inner-select"}>
+          <li>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="search"
+              onChange={changeHandler}
+            />
+          </li>
+          {menuList()}
+        </ul>
       </div>
     </div>
   );
