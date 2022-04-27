@@ -57,6 +57,7 @@ button {
 
 .toggle-wrap li.active {
   color: #000;
+  font-weight: bold;
 }
 
 .toggle-wrap .slide {
@@ -157,11 +158,14 @@ button {
 }
 
 /* input start */
-.input-wrap > div {
+.input-wrap form{
   width: 50%;
+}
+.input-wrap form > div {
+  width: 100%;
   position: relative;
 }
-.input-wrap > div:not(:last-of-type) {
+.input-wrap form > div:not(:last-of-type) {
   margin-bottom: 10px;
 }
 .input-wrap label {
@@ -187,6 +191,9 @@ button {
   right: 10px;
   font-size: 1.2rem;
   color: #ccc;
+}
+.input-wrap .password-wrap .icon{
+  cursor: pointer;
 }
 
 .input-wrap .icon.active {

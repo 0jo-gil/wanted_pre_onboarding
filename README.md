@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+<h1>원티드 프리온보딩 프론트엔드</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div>
+    <h2>Toggle</h2>
+    <ul>
+        <li>setState훅을 사용하여 탭 메뉴 인덱스 관리 및 클릭한 탭의 offsetLeft 값을 저장</li>
+        <li>클릭 이벤트 및 state 활용하여 클릭할때마다 해당 탭에 클래스 제어</li>
+        <li>클래스 추가시 css를 추가하여 각탭의 색상 변화</li>
+        <li>state에 저장된 offsetLeft 값을 활용하여 슬라이드 애니메이션 구현</li>
+    </ul>
+<div>
+<div>
+    <h2>Tab</h2>
+    <ul>
+        <li>setState훅을 사용하여 탭 메뉴 인덱스 관리 및 클릭한 탭의 offsetLeft 값을 저장</li>
+        <li>클릭 이벤트 및 state 활용하여 클릭할때마다 해당 탭에 클래스 제어</li>
+        <li>클래스 추가시 css를 추가하여 각탭의 색상 변화</li>
+        <li>state에 저장된 offsetLeft 값을 활용하여 슬라이드 애니메이션 구현</li>
+    </ul>
+<div>
+<div>
+    <h2>Slider</h2>
+    <ul>
+        <li>input[type=range] 태그를 활용하여 기본 마크업 구현</li>
+        <li>input에 onChange 이벤트를 활용하여 input 값이 변경될때마다 state에 range 값을 저장하여 퍼센테이지 값을 출력</li>
+        <li>input 하단 퍼센트 버튼을 추가하여 클릭할때마다 퍼센테이지 값을 state에 저장하여 input값 및 퍼센테이지 변경</li>
+    </ul>
+<div>
+<div>
+    <h2>Input</h2>
+    <ul>
+        <li>input[type=email] 마크업으로 onChange 이벤트 활용</li>
+        <li>이메일 문자열 숫자열 검사를 포함하여 @문자, '.'등 몇가지 조건을 포함한 정규표현식 유효성 검사를 진행</li>
+        <li>이메일 양식이 맞다면 체크 아이콘 활성화</li>
+        <li>input[type=password] 마크업 활용</li>
+        <li>setState훅을 사용하여 아이콘을 클릭할때마다 input 타입을 text, password로 toggle이 가능하도록 클릭 이벤트 설정</li>
+    </ul>
+<div>
+<div>
+    <h2>Drop down</h2>
+    <ul>
+        <li>setState 훅승 활용하여 셀렉트 박스 클릭시 하위 메뉴가 나오도록 클래스 제어</li>
+        <li>하위 드롭다운 메뉴에 input[type=text] 마크업을 통해 검색어를 입력할때마 onChange 이벤트를 활용, value 값을 가져와 filter 기능을 이용하여 조건 추가</li>
+        <li>input에 입력한 조건을 통해 문자열 조건에 맞춘 리스트 출력</li>
+        <li>드롭다운 메뉴 리스트 클릭시 useState 훅을 사용하여 셀렉트 박스 텍스트 변경 이벤트 구현</li>
+    </ul>
+<div>
